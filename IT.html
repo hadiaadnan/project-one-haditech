@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<style>
+
+    /* Three Columns based style*/
+.column1 {
+  margin-left: 30px;
+  grid-area: 'col1';
+}
+
+.column2 {
+  grid-area: 'col2';
+}
+
+.column3 {
+  grid-area: 'col3';
+}
+
+
+
+/* Clear floats after the columns */
+.row-footer {
+  display: grid;
+  grid-template-areas: 'col1 col2 col3';
+  gap: 10px;
+}
+
+
+    img{
+        width: 41px;
+        margin-left: 20px;
+        
+    }
+    .navbar{
+       background-color: #30336b ;
+    
+    }
+    .carousel-inner{
+        width: 100%;
+        height: 300px;
+    }
+    /* .contant{
+      margin-top: 9%;
+      margin-left: 9%;
+      color: #0652DD;
+    }
+    .contant h1{
+      font-size: 150px;
+      line-height: 140px;
+      font-weight: 600px;
+      color: #30336b;
+    }
+    .slide-left{
+      animation:forwards;
+    }
+  @keyframes slide-left{
+    0%{
+      transform: translate(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translate(0px);
+      opacity: 1;
+    } */
+
+  
+ .card-img-top{
+  width: 400px;
+  height: 250px;
+  margin-top: 10px;
+ }
+ .card{
+  color: #eff1f5;
+  background-color:  rgb(11, 37, 122);
+  /* background-color:  #30336b; */
+  display: inline-block;
+  margin: 15px;
+  padding: 5px;
+  max-width: 44rem;
+  min-width: 20rem;
+  max-height: 50rem;
+  min-height: 35rem;
+  border:1px solid rgb(91, 234, 253);
+  box-shadow: 2px 2px 15px
+  rgba(6, 247, 247, 0.3);
+  border-radius: 8px;
+  
+ }
+ .content h1{
+    font-size: 60px;
+    background: linear-gradient(rgb(11, 37, 122),rgb(49, 151, 235));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+ }
+ .progress{
+  margin: 10px;
+  font-family: sans-serif;
+  
+ }
+ /* .text para{
+  font-size: 60px;
+    background: linear-gradient(rgb(64, 106, 247),rgb(27, 235, 235));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    padding: 20px; */
+  
+ 
+ h5{
+  font-size: 30px;
+ }
+ h5.card-title{
+  font-size: 20px !important;
+  font-weight: bolder;
+ }
+ /* .box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+  background-color: #ffcccc;
+  width: 200px;
+  height: 200px;
+  rotate: 180deg;
+} */
+.container{
+  display: inline-block;
+  font-family: "arial";
+  font-size: 25px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+  color: #3e0bf7;
+  font-size: 50px;
+  animation-iteration-count: infinite;
+  
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* .container{
+  display: inline-block;
+  font-family: "arial";
+  font-size: 25px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+  color: #16caf7;
+  font-size: 25px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+} */
+.text{
+  margin-top: 9%;
+  margin-left: 9%;
+  color: white;
+  overflow: hidden;
+  
+}
+.text h4{
+  font-size: 120px;
+  line-height: 140px;
+  font-weight: 600;
+
+}
+.slide-left{
+  animation: slideleft is 1s linear forwards;
+  animation-duration: 5s;
+
+}
+@keyframes slideleft{ 
+  0%{
+    transform: translate(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0px);
+    opacity: 1;
+  }
+  
+
+}
+ 
+  
+
+
+
+ 
+
+/* .background{
+  width: 100%;
+  max-width: 100vh;
+  max-height: 100vh;
+  padding: 5%;
+  background-image: url("bg.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  background: #16caf7;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing:border-box;
+}
+/* .input-group{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("a2.jpg");
+  width: 180vh;
+  margin: 20px;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  
+
+/* .form-control h1{
+  width: 100vh;
+  margin: 20px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(rgb(38, 0, 255), rgb(14, 240, 221), rgb(28, 96, 141));
+  font-weight: bolder;
+  border: 3px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  z-index: 2;
+
+   */
+   body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  /* background-image: url("bgg.jpg"); */
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  /* height: 100%;  */
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #2e64fa;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+ 
+}
+h4{
+  background: linear-gradient( rgb(11, 37, 122),rgb(49, 151, 235));
+  color: #fdffff;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content:center;
+}
+h3{
+  color: rgb(11, 37, 122);
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content:center;
+   text-shadow: rgb(117, 235, 225) ;
+}
+.container-one {
+  position: relative;
+  /* display: inline block; */
+  margin: 10px;
+  padding: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #0a06fa;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  margin: 10px;
+}
+
+.container-one:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text-one{
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.col-xs-pull-4{
+  color: #f3f6fa;
+  transition: 5s ease;
+
+}
+.col-xs-pull-4:hover{
+  background-color: #82d1f5;
+}
+.shelf{
+  display: flex;
+}
+.hero{
+  background-color: rgb(3, 19, 109);
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 80px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #eff1f5;
+  
+}
+.hero h1{
+  font-size: 50px;
+  font-weight: 500;
+}
+.row{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col{
+  flex-basis: 28%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  min-width: 230px;
+  margin-bottom: 20px;
+  z-index: 2;
+
+}
+.profile{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: rgb(84, 109, 189)s;
+  padding: 12px;
+}
+.profile img{
+  width: 80%;
+}
+.profile h2{
+  margin: 25px 10px;
+  font-weight: 500;
+}
+.profile p{
+  margin-bottom: 10px;
+  color: rgb(14, 13, 13);
+  font-size: 30px;
+}
+.col::before,.col::after{
+  content: '';
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(135deg,#7ae7f5,#29048f);
+  position: absolute;
+  z-index: -1;
+  animation: stroke 4s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+.col::before{
+  left:0;
+  top: -8px;
+}
+.col::after{
+  right: 0;
+  bottom: -8px;
+}
+@keyframes stroke{
+  0%{
+    height: 8px;
+    width: 0px;
+  }
+  50%{
+    height: 8px;
+    width:100%;
+  }
+  100%{
+    height: 100%;
+    width: 100%;
+
+  }
+}
+
+.align-items-center {
+  display: flex;
+}
+
+.overlay-image{
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 350px;
+  max-height: 350px;
+}
+.progress-bar progress-bar-striped progress-bar-animated{
+  color: #001aff;
+}
+.main{
+  background: url("b6.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background-position: -400px 0px; */
+  
+
+}
+.register{
+   background-color: rgba(0, 0, 0, 0.5);;
+  width: 40vw;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(23, 63, 54, 0.3);
+  box-shadow: 2px 15px 15px
+  rgba(6, 247, 247, 0.3);
+  color: rgb(227, 228, 247);
+  margin-top: 20px;
+}
+form#register{
+  margin: 40px;
+
+}
+label{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+input#name{
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: rgb(240, 231, 231);
+  box-shadow: inset 1px 1px 5px
+  rgba(0, 0, 0, 0.3);
+}
+
+
+.form-centered {
+  display: flex;
+  justify-content: center;
+}
+input#submit{
+  width: 200px;
+  padding: 7px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  background-color: #092efd;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container{
+  background-color:  rgb(36, 36, 36);
+  padding-bottom: 4rem;
+}
+.footer{
+  width: 80%;
+  height: 40vh;
+  background-color:  rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footer-heading{
+  color: rgb(97, 97, 235);
+  display: flex;
+  flex-direction:column;
+  margin-right: 4rem;
+}
+.footer-heading h2{
+  margin-bottom: 2rem;
+}
+.footer-heading a{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a:hover{
+  color: #7ae7f5;
+  transition: 0.3s  ease-out;
+  
+}
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+ 
+  
+ 
+ 
+  
+ 
+    
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar ">
+        <img src="b-logo.png" alt="">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our subsidiries
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Innovation</a>
+                <a class="dropdown-item" href="#">Digital</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Financial </a>
+              </div>
+              </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            <div class="clearfix">
+              <div class="spinner-border float-right" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+          </form>
+        </div>
+      </nav>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="t2.jfif" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="t3.jfif" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="t4.jfif" alt="Third slide">
+          </div>
+        </div>
+      </div>
+     </div>
+        <div class="content">
+          <h1>Crafting the digital future</h1>
+        </div>
+        <div class="container">
+          <p class="typed">Hadi's Techno helps enterprisis</p>
+        </div>
+      </div>
+        
+
+        <div class="card">
+          <img src="t7.jpg" class="card-img-top" alt="..">
+          <div class="card-body">
+            <h5 class="card-title">Admin Executive</h5>
+            <p class="card-text">Required expertise in this admin executive side.Hand on experience on handling admin and back office work.</p>
+            <a href="#" class="btn btn-outline-info">Check details </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="t8.jpg" class="card-img-top" alt="..">
+          <div class="card-body">
+            <h5 class="card-title">Digitial Marketing Manager</h5>
+            <p class="card-text">Required expertise in this admin executive side.Hand on experience on handling admin and back office work.</p>
+            <a href="#" class="btn btn-outline-info">Check details </a>
+          </div>
+        </div>
+        <div class="card" >
+          <img src="t9.jfif" class="card-img-top" alt="..">
+          <div class="card-body">
+            <h5 class="card-title">Web application developers</h5>
+            <p class="card-text">Required expertise in this web application developers side.Hand on experience on handling admin and back office work.</p>
+            <a href="#" class="btn btn-outline-info">Check details </a>
+          </div>
+        </div>
+        <div class="card" >
+          <img src="t6.jpg" class="card-img-top" alt="..">
+          <div class="card-body">
+            <h5 class="card-title">Techlogics Officers</h5>
+            <p class="card-text">Required expertise in this technologics officers side.Hand on experience on handling admin and back office work.</p>
+            <a href="#" class="btn btn-outline-info">Check details </a>
+          </div>
+        </div>
+        <div class="card" >
+          <img src="t5.jfif" class="card-img-top" alt="..">
+          <div class="card-body">
+            <h5 class="card-title">financial manager</h5>
+            <p class="card-text">Required expertise in this financial managers side.Hand on experience on handling admin and back office work.</p>
+            <a href="#" class="btn btn-outline-info">Check details </a>
+          </div>
+        </div>
+        <div class="card" >
+          <img src="t9.png" class="card-img-top" alt="..">
+          <div class="card-body">
+            <h5 class="card-title">java Developers</h5>
+            <p class="card-text">Required expertise in this java developers side.Hand on experience on handling admin and back office work.</p>
+            <a href="#" class="btn btn-outline-info">Check details </a>
+          </div>
+        </div>
+        <div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>Our Employment performances</h2>
+  <h1 style="font-size:50px">Here is Hadi's Techno</h1>
+  <p>And visit our website and check out the details</p>
+</div>
+
+<h4>Employment facilities <br> and performances</h4>
+
+      </div>
+        <h5>Techlogics officers</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:75% " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">100%</div>
+        </div>
+        <h5>financial manager</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+        </div>
+        <h5>java developers</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">75%</div>
+        </div>
+        <h5>Digital Marketing managers</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+        <h5>web application developers</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">30%</div>
+        </div>
+        <!-- <div class="box"> -->
+          <h3>Registration Form</h3>
+          <!-- <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" placeholder="search"/>
+              <!-- <button type="button" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+              </button> -->
+              <!-- <label class="form-label" for="form1">Search</label> -->
+            <!-- </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button> -->
+          <!-- </div> --> 
+          <div class="main">
+            <div class="form-centered">
+              <div class="register">
+               <div class="form-centered"><h2>Register Here</h2> </div>
+              <form id="register"method="post">
+              <lable>First Name:</lable>
+              <br>
+               <input type="text" name="fname"
+              id="name"placeholder="Enter Your First Name">
+              <br> <br>
+                 <label>last Name : </label>
+                 <br> 
+                <input type="text" name="lname"
+              id="name"placeholder="Enter your Last Name">
+            <br> <br>
+          <lable> Your Age : </lable>
+           <br>
+            <input type="number"name="age"
+          id="name"placeholder="How old are you?">
+        <br> <br>
+        <label>Email : </label>
+        <br>
+        <input type="email" name="email"
+        id="name"placeholder="Enter Your Valid Email">
+        <br> <br>
+        <label>Gender : </label>
+        <br>
+        &nbsp; &nbsp; &nbsp;
+        <input type="radio"name="gender"
+        id="male">
+         &nbsp;
+         <span id="male">Male</span>
+          &nbsp; &nbsp; &nbsp;
+        <input type="radio"name="gender"
+        id=" Female">
+         &nbsp;
+         <span id="female">Female</span>
+          <div class="input-group">
+          <div class="form-outline">
+            <!-- <input type="search" id="form1" class="form-control" placeholder="search"/>
+            <!-- <button type="button" class="btn btn-primary"> -->
+              <!-- <i class="fas fa-search"></i>
+            </button> --> 
+            <!-- <label class="form-label" for="form1">Search</label> -->
+          <!-- </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button> -->
+          <input type="submit"value="submit"
+        name="submit"  id="submit">
+        </div>
+      </form>
+             </div>
+            </div>
+               
+          </div>
+          <div class="row" style="border:none; background:rgb(242, 246, 247); height: 210pxpx;">
+            <div class="col-xs-6">
+              <img src="a1.gif" style="height:400px;width: 600px; margin-left:20px;margin-top: 10px;" />
+            </div>
+            <div class="col-xs-6">  
+              <h3>Digital Marketing</h3>
+              <p style="font-size:30px; color:#03225C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa.</p>
+            </div>
+          
+          
+        </div>
+        <div class="align-items-center">
+          <div class="shelf">
+            <div class="container-one">
+              <img src="b3.jpg" alt="Avatar" class="overlay-image">
+              <div class="overlay">
+                <div class="text-one">Technology></div>
+    
+                </div>
+              </div>
+            </div>
+            <div class="shelf">
+            <div class="container-one">
+              <img src="tech.png" alt="Avatar" class="overlay-image">
+              <div class="overlay">
+                <div class="text-one">operations</div>
+              </div>
+              </div>
+            </div>
+            <div class="shelf">
+            <div class="container-one">
+              <img src="ba.jfif" alt="Avatar"class="overlay-image">
+              <div class="overlay">
+                <div class="text-one">strategy></div>
+              </div>
+            </div>
+            </div>
+        </div>
+        
+          <div class="col-xs-pull-4">  
+            <h3 style="font-size:60px ;color:#0c10ee">How can i help</h3>
+            <p style="font-size:30px; color:#01111a;">That’s where I come in. I deliver exceptional results and develop novel solutions to challenging business problems. My experience comprises successful multi-billion dollar projects and startups that are just getting off the ground.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero">
+        <h1>Team Members</h1>
+
+          <div class="row">
+            <div class="col">
+              <div class="profile">
+                <img src="j.jfif">
+                <h2>Naveed</h2>
+                <p >web developer</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="profile">
+                <img src="had.jpg">
+                <h2>Hadia Farooq</h2>
+                <p >product Manager</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="profile">
+                <img src="j2.jfif">
+                <h2>Salman Iqbal</h2>
+                <p >Administrator</p>
+              </div>
+            </div>
+          </div>
+            
+          
+
+      </div>
+      <div class="footer-container row-footer">
+        <div class="footer-heading column1">
+          <h2>About us</h2>
+          <a href="#">Demo</a>
+          <a href="#">Customers</a>
+          <a href="#">Investors</a>
+          <a href="#">Term of service</a>
+        </div>
+        <div class="footer-heading column2">
+          <h2>Contact us</h2>
+          <a href="#">Jobs</a>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+          <a href="#">Sponsership</a>
+        </div>
+        <div class="footer-heading column3">
+          <h2>Social Media</h2>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Youtube</a>
+        </div>
+      </div>
+      <!-- <div>
+        <div class="footer-email-form">
+          <h2>Join us our new updates</h2>
+          <input type="email"placeholder="Enter your email address"id="footer-email">
+          <input type="submit"value="sign up"
+          id="footer-email-btn">
+        </div> -->
+<!-- 
+      </div> -->
+        
+      
+        
+       
+</body>
+        
+         
+        
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
