@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
@@ -15,6 +15,7 @@
 .column1 {
   margin-left: 30px;
   grid-area: 'col1';
+  
 }
 
 .column2 {
@@ -310,17 +311,15 @@
 
 /* Position text in the middle of the page/image */
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #2e64fa;
-  position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position:absolute;
+  top: 358px ;
+  left: 15% ;
+  width: 64% ;
   z-index: 2;
-  width: 80%;
   padding: 20px;
   text-align: center;
  
@@ -352,6 +351,7 @@ h3{
   display: block;
   width: 100%;
   height: auto;
+
 }
 
 .overlay {
@@ -496,25 +496,28 @@ h3{
 }
 .main{
   background: url("b6.jpg");
-  background-size: 100%;
+  background-size: 200%;
   background-repeat: no-repeat;
+  
   /* background-position: -400px 0px; */
   
 
 }
 .register{
    background-color: rgba(0, 0, 0, 0.5);;
-  width: 40vw;
+    max-width: 40vw;
+    max-height: 70vw;
   font-size: 18px;
   border-radius: 10px;
   border: 1px solid rgba(23, 63, 54, 0.3);
   box-shadow: 2px 15px 15px
   rgba(6, 247, 247, 0.3);
   color: rgb(227, 228, 247);
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 form#register{
-  margin: 40px;
+  margin : 40px;
 
 }
 label{
@@ -588,11 +591,60 @@ input#submit{
   transition: 0.3s  ease-out;
   
 }
-  
 
 
+/* @media (min-width: 1200px) {
+  .card{
+    max-width: 1500px;
+  } */
+
+@media screen and (width >= 800px) {
+      .navbar{
+        max-width:1300 ;
+      }
 
 
+        .column1{
+          max-width: 1300px;
+        }
+
+        .carousel-inner{
+        max-width:1300px;
+        }
+
+        .text-one{
+          max-width: 1300px;
+        }
+
+          .overlay{
+            max-width: 1300px;
+          }
+
+            .card-img-top{
+              max-width: 1300px;
+            }
+
+            .bg-text{
+              max-width: 1400px;
+              top: 110px;
+              left:20%;
+              width: 40%;
+              
+
+            }
+      }
+
+  @media screen and (min-width <= 600px){
+  .col{
+    min-width: 390px !important;
+  }
+  .bg-text {
+
+    top: 358px !important;
+    left: 15% !important;
+    width: 64% !important;
+  }
+}
 
 
 
@@ -626,7 +678,9 @@ input#submit{
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar ">
-        <img src="b-logo.png" alt="">
+      <div class="img">
+        <img src="b-logo.png" >
+      </div>
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -671,10 +725,17 @@ input#submit{
           </form>
         </div>
       </nav>
+      <div class="bg-text">
+        <h2>Our Employment performances</h2>
+         <h1 style="font-size:50px">Here is Hadi's Techno</h1>
+        <p>And visit our website and check out the details</p>
+      </div>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="t2.jfif" alt="First slide">
+            <img class="d-block w-100 ml-4" src="t2.jfif" alt="First slide">
+
+       </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="t3.jfif" alt="Second slide">
@@ -682,7 +743,6 @@ input#submit{
           <div class="carousel-item">
             <img class="d-block w-100" src="t4.jfif" alt="Third slide">
           </div>
-        </div>
       </div>
      </div>
         <div class="content">
@@ -742,16 +802,16 @@ input#submit{
             <a href="#" class="btn btn-outline-info">Check details </a>
           </div>
         </div>
-        <div class="bg-image"></div>
-
-<div class="bg-text">
+        <div class="bg-image">
+        </div>
+ 
+   <!-- <div class="bg-text">
   <h2>Our Employment performances</h2>
   <h1 style="font-size:50px">Here is Hadi's Techno</h1>
   <p>And visit our website and check out the details</p>
-</div>
-
+  </div>  -->
 <h4>Employment facilities <br> and performances</h4>
-
+      </div>
       </div>
         <h5>Techlogics officers</h5>
         <div class="progress">
@@ -845,7 +905,7 @@ input#submit{
           </div>
           <div class="row" style="border:none; background:rgb(242, 246, 247); height: 210pxpx;">
             <div class="col-xs-6">
-              <img src="a1.gif" style="height:400px;width: 600px; margin-left:20px;margin-top: 10px;" />
+              <img src="a1.gif" style="height:300px;width: 400px; margin-left:10px;margin-top: 10px;" />
             </div>
             <div class="col-xs-6">  
               <h3>Digital Marketing</h3>
@@ -973,8 +1033,8 @@ input#submit{
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+
 </html>
